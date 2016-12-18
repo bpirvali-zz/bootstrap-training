@@ -5,18 +5,15 @@
     <title>Index</title>
 
     <!-- bootstrap css -->
-    <!--<link rel="stylesheet" href="../static/css/bootstrap.min.css"           th:href="@{/webjars/bootswatch-cerulean/3.3.5/css/bootstrap.min.css}" media="screen"/>-->
-    <!--<link rel="stylesheet" href="../static/css/cerulean-bootstrap.min.css"  th:href="@{/webjars/bootswatch-cerulean/3.3.5/css/bootstrap-theme.min.css}"/>-->
     <link rel="stylesheet" href="../static/css/bootstrap.min.css"           th:href="@{css/bootstrap.min.css}" media="screen"/>
     <link rel="stylesheet" href="../static/css/cerulean-bootstrap.min.css"  th:href="@{css/cerulean-bootstrap.min.css}"/>
-
     <link rel="stylesheet" href="../static/css/custom.css"                  th:href="@{css/custom.css}" />
 </head>
 <body>
     <div id="page" >
-        <header class="container" th:replace="fragments/head :: site-menu"/>
+        <header class="container" th:replace="fragments/fragments :: site-menu('Home')"/>
         <section class="container">
-            <div class="row visible-md">
+            <div class="row hidden-xs hidden-sm">
                 <img src="../static/images/small-image-1.png" th:src="@{images/small-image-1.png}" alt="image-1" class="col-md-2 col-md-offset-2"/>
                 <img src="../static/images/small-image-2.png" th:src="@{images/small-image-2.png}" alt="image-2" class="col-md-2"/>
                 <img src="../static/images/small-image-3.jpeg" th:src="@{images/small-image-3.jpeg}" alt="image-4" class="col-md-2"/>
@@ -47,8 +44,9 @@
             &copy; bp.com 2016
         </footer>
     </div>
-    <script src="../static/js/jquery-3.1.1.min.js" th:src="@{js/jquery-3.1.1.min.js}"/>
-    <script src="../static/js/bootstrap.min.js"    th:src="@{js/bootstrap.min.js}"/>
+    <script src="https://code.jquery.com/jquery-3.1.1.min.js" th:src="@{js/jquery-3.1.1.min.js}"/>
+    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" th:src="@{js/bootstrap.min.js}"/>
+
 </body>
 
 </html>
