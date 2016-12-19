@@ -1,51 +1,52 @@
 <!DOCTYPE html>
-<html lang="en" >
+<html lang="en">
 <head>
     <meta charset="UTF-8">
-    <!-- bootstrap 3.3.7, bs-theme, custom-settings -->
-    <link rel="stylesheet" href="./css/bootstrap.min.css" />
-    <link rel="stylesheet" href="./css/cerulean-bootstrap.min.css" />
-    <link rel="stylesheet" href="./css/custom.css" />
+    <title>Title</title>
+
+    <!-- bootstrap css -->
+    <link rel="stylesheet" href="css/bootstrap.min.css" media="screen" />
+    <link rel="stylesheet" href="css/cerulean-bootstrap.min.css" />
+    <link rel="stylesheet" href="css/custom.css" />
 </head>
 <body>
-    <header class="container" >
-        <div id="menu" class="navbar navbar-inverse navbar-fixed-top">
-            <!-- navbar-header: logo and toggle button -->
-            <div class="navbar-header">
-                <!--
-                navbar-toggle... makes the button visible/un-visible
-                data-toggle...defines the behavior of collapsing/expanding a bunch of menus
-                data-target...defines the target menu to be collapsed/expanded
-                -->
-                <button type="button" class="btn navbar-toggle" data-toggle="collapse" data-target="#site-menu">
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                </button>
-                <div id="logo">
-                    <a class="navbar-brand" href="#">LOGO</a>
-                </div>
-            </div>
-            <!-- This class makes the navbar to collapse for small screen sizes -->
-            <div class="navbar-collapse collapse"  id="site-menu">
-                <!-- This class makes the list to a navbar, right aligned -->
-                <ul class="nav navbar-nav navbar-right" style="margin-right: 0px">
-                    <li class="nav" ><a href="/index.html">Home</a></li>
-                    <li class="nav" ><a href="/about.html" >
-                        About</a></li>
-                    <li class="nav" ><a href="/contact.html" >
-                        Contact</a></li>
-                </ul>
+<header class="container">
+    <div id="menu" class="navbar navbar-inverse navbar-fixed-top">
+        <!-- navbar-header: logo and toggle button -->
+        <div class="navbar-header">
+            <!--
+            navbar-toggle... makes the button visible/un-visible
+            data-toggle...defines the behavior of collapsing/expanding a bunch of menus
+            data-target...defines the target menu to be collapsed/expanded
+            -->
+            <button type="button" class="btn navbar-toggle" data-toggle="collapse" data-target="#site-menu">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <div id="logo">
+                <a class="navbar-brand" href="#">LOGO</a>
             </div>
         </div>
-    </header>
-    <h1>test-bootstrap.html</h1>
-    <button type="button" class="btn btn-default">
-        <span class="glyphicon glyphicon-print"></span> Search
-    </button>
-
-    <!-- bootstrap, jquery -->
-    <script src="https://code.jquery.com/jquery-3.1.1.min.js" />
-    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" />
+        <!-- This class makes the navbar to collapse for small screen sizes -->
+        <div class="navbar-collapse collapse" id="site-menu">
+            <!-- This class makes the list to a navbar, right aligned -->
+            <ul class="nav navbar-nav navbar-right" style="margin-right: 0px">
+                <li class="nav"><a href="/">
+                    Home</a></li>
+                <li class="nav"><a href="/about">
+                    About</a></li>
+                <li class="nav active"><a href="/contact">
+                    Contact</a></li>
+            </ul>
+        </div>
+    </div>
+</header>
+<h1>test-bootstrap.html</h1>
+<button type="button" class="btn btn-default">
+    <span class="glyphicon glyphicon-print"></span> Print
+</button>
+<script src="js/jquery-3.1.1.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
 </body>
 </html>
